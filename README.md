@@ -7,6 +7,7 @@ followed by npm run setup. This will create your SQLite3 database in your root f
 
 # To use the DID manager
 npm run did
+(app uses port 8080)
 
 This will generate a new ION DID and send an anchor request using https://github.com/decentralized-identity/ion-tools 
 The DID information and ops file will be saved to an SQLite3 database. 
