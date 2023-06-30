@@ -9,7 +9,7 @@ followed by npm run setup. This will create your SQLite3 database in your root f
 npm run did
 
 This will generate a new ION DID and send an anchor request using https://github.com/decentralized-identity/ion-tools 
-The DID infomration and ops file will be saved to an SQLite3 database. 
+The DID information and ops file will be saved to an SQLite3 database. 
 
 # To start the DWN
 (not ready yet)
