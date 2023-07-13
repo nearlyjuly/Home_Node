@@ -35,7 +35,7 @@ const message = reqMessage.params.message;
 const id = reqMessage.id;
 const data = req.body;
 const dwnReply = await dwn.processMessage(did, message, data);
-console.log(dwnReply);
+//console.log(dwnReply);
 res.set('application/octet-stream');
 res.send({
     jsonrpc: '2.0',
