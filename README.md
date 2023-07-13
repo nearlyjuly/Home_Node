@@ -1,16 +1,16 @@
-(Backup for db will be added shortly. Please download manually for now.)
+(For practice only. Works but will be updated in the next few weeks. 13.7.23)
 
-# Installation and setup for first use
+# Installation 
+Download or clone the project files. Run npm i to install.
+Port is set at 3000. Edit at ln 50 in simpledwn/dwn.js if you'd like to use a different one.
 
-Please either fork this repo or download/clone as you prefer. Run npm i (this willl take a long time)
-followed by npm run setup. This will create your SQLite3 database in your root folder.
+# To use
+Establish the address of your DWN first (it'll be localhost:3000 on the same device, the local IP address:3000 for a device on your home network, or a forwarded address if you want to access it away from home). Once you have your address, create a DID in the HomeNode manager repo with this address OR use the Web5-JS SDK to do the same https://github.com/TBD54566975/web5-js#options-optional NB. If you choose the latter then this will create another local DWN in your Web5 project.
 
-# To use the DID manager
-npm run did
-(app uses port 8080)
+Once you have your DID or DIDs make sure to add them in the tenantsArray at ln 8 simple/dwn.js 
 
-This will generate a new ION DID and send an anchor request using https://github.com/decentralized-identity/ion-tools 
-The DID information and ops file will be saved to an SQLite3 database. 
+Once this is done you can start the DWN with npm run startdwn 
 
-# To start the DWN
-(not ready yet)
+You can write to your DWN now, but only if you address it to your own DID. If you want to write to your DWN from another DID (even if it's from another tenant) then you need to install a protocol to do this. There will be a way to set permissions in future.
+
+
