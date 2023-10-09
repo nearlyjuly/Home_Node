@@ -1,4 +1,4 @@
-(For practice only. Works but will be updated in the next few weeks. 13.7.23)
+(Archived as there is no real need for something like this with the dwn-server available from TBD)
 
 # Installation 
 Download or clone the project files. Run npm i to install.
